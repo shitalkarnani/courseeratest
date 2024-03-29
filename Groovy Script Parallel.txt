@@ -73,7 +73,7 @@ pipeline {
             stage('Task-5') {
                 steps {
                 script {
-                    timeout(time: 300, unit: 'SECONDS') {
+                    timeout(time: 400, unit: 'SECONDS') {
                       fs = listfiles("/mnt/nfs/var/nfs_share_dir/new/",100000,124999)
                         fs.each {
                         	println(it)
